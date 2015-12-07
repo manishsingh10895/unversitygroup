@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>UniversityGroup</Name>
+    <ProjectGuid>9253cc44-18c5-4f71-8bf2-460c4418f6be</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>.</OutputPath>
+    <RootNamespace>UniversityGroup</RootNamespace>
+    <ProjectTypeGuids>{73520F3B-57D4-4D7D-8280-D81F0A3C992B};{349C5851-65DF-11DA-9384-00065B846F21};{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Includes\database.php" />
+    <Compile Include="Includes\formvalidation.php" />
+    <Compile Include="Includes\functions.php" />
+    <Compile Include="Includes\header.php" />
+    <Compile Include="Includes\userFunctions.php" />
+    <Compile Include="index.php" />
+    <Compile Include="UserInteractivity\login.php" />
+    <Compile Include="UserInteractivity\logout.php" />
+    <Compile Include="UserInteractivity\Signup.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BootStrap\" />
+    <Folder Include="BootStrap\dist\" />
+    <Folder Include="BootStrap\dist\css\" />
+    <Folder Include="BootStrap\dist\fonts\" />
+    <Folder Include="BootStrap\dist\js\" />
+    <Folder Include="BootStrap\docs\" />
+    <Folder Include="BootStrap\docs\assets\" />
+    <Folder Include="BootStrap\docs\assets\brand\" />
+    <Folder Include="BootStrap\docs\assets\css\" />
+    <Folder Include="BootStrap\docs\assets\css\src\" />
+    <Folder Include="BootStrap\docs\assets\flash\" />
+    <Folder Include="BootStrap\docs\assets\img\" />
+    <Folder Include="BootStrap\docs\assets\js\" />
+    <Folder Include="BootStrap\docs\assets\js\src\" />
+    <Folder Include="BootStrap\docs\assets\js\vendor\" />
+    <Folder Include="BootStrap\docs\dist\" />
+    <Folder Include="BootStrap\docs\dist\css\" />
+    <Folder Include="BootStrap\docs\dist\fonts\" />
+    <Folder Include="BootStrap\docs\dist\js\" />
+    <Folder Include="BootStrap\docs\examples\" />
+    <Folder Include="BootStrap\docs\examples\blog\" />
+    <Folder Include="BootStrap\docs\examples\carousel\" />
+    <Folder Include="BootStrap\docs\examples\cover\" />
+    <Folder Include="BootStrap\docs\examples\dashboard\" />
+    <Folder Include="BootStrap\docs\examples\grid\" />
+    <Folder Include="BootStrap\docs\examples\jumbotron-narrow\" />
+    <Folder Include="BootStrap\docs\examples\jumbotron\" />
+    <Folder Include="BootStrap\docs\examples\justified-nav\" />
+    <Folder Include="BootStrap\docs\examples\navbar-fixed-top\" />
+    <Folder Include="BootStrap\docs\examples\navbar-static-top\" />
+    <Folder Include="BootStrap\docs\examples\navbar\" />
+    <Folder Include="BootStrap\docs\examples\non-responsive\" />
+    <Folder Include="BootStrap\docs\examples\offcanvas\" />
+    <Folder Include="BootStrap\docs\examples\screenshots\" />
+    <Folder Include="BootStrap\docs\examples\signin\" />
+    <Folder Include="BootStrap\docs\examples\starter-template\" />
+    <Folder Include="BootStrap\docs\examples\sticky-footer-navbar\" />
+    <Folder Include="BootStrap\docs\examples\sticky-footer\" />
+    <Folder Include="BootStrap\docs\examples\theme\" />
+    <Folder Include="BootStrap\docs\examples\tooltip-viewport\" />
+    <Folder Include="BootStrap\docs\_data\" />
+    <Folder Include="BootStrap\docs\_includes\" />
+    <Folder Include="BootStrap\docs\_includes\components\" />
+    <Folder Include="BootStrap\docs\_includes\css\" />
+    <Folder Include="BootStrap\docs\_includes\getting-started\" />
+    <Folder Include="BootStrap\docs\_includes\js\" />
+    <Folder Include="BootStrap\docs\_includes\nav\" />
+    <Folder Include="BootStrap\docs\_jade\" />
+    <Folder Include="BootStrap\docs\_layouts\" />
+    <Folder Include="BootStrap\docs\_plugins\" />
+    <Folder Include="BootStrap\fonts\" />
+    <Folder Include="BootStrap\grunt\" />
+    <Folder Include="BootStrap\js\" />
+    <Folder Include="BootStrap\js\tests\" />
+    <Folder Include="BootStrap\js\tests\unit\" />
+    <Folder Include="BootStrap\js\tests\vendor\" />
+    <Folder Include="BootStrap\js\tests\visual\" />
+    <Folder Include="BootStrap\less\" />
+    <Folder Include="BootStrap\less\mixins\" />
+    <Folder Include="BootStrap\test-infra\" />
+    <Folder Include="Images\" />
+    <Folder Include="Includes\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Styles\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="UserInteractivity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\universitygroup.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BootStrap\.editorconfig" />
+    <Content Include="BootStrap\.gitattributes" />
+    <Content Include="BootStrap\.gitignore" />
+    <Content Include="BootStrap\.travis.yml" />
+    <Content Include="BootStrap\bower.json" />
+    <Content Include="BootStrap\CNAME" />
+    <Content Include="BootStrap\composer.json" />
+    <Content Include="BootStrap\CONTRIBUTING.md" />
+    <Content Include="BootStrap\dist\css\bootstrap-theme.css" />
+    <Content Include="BootStrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="BootStrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="BootStrap\dist\css\bootstrap.css" />
+    <Content Include="BootStrap\dist\css\bootstrap.css.map" />
+    <Content Include="BootStrap\dist\css\bootstrap.min.css" />
+    <Content Include="BootStrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="BootStrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="BootStrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="BootStrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="BootStrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="BootStrap\dist\js\bootstrap.js" />
+    <Content Include="BootStrap\dist\js\bootstrap.min.js" />
+    <Content Include="BootStrap\dist\js\npm.js" />
+    <Content Include="BootStrap\docs\about.html" />
+    <Content Include="BootStrap\docs\apple-touch-icon.png" />
+    <Content Include="BootStrap\docs\assets\brand\bootstrap-outline.svg" />
+    <Content Include="BootStrap\docs\assets\brand\bootstrap-punchout.svg" />
+    <Content Include="BootStrap\docs\assets\brand\bootstrap-solid.svg" />
+    <Content Include="BootStrap\docs\assets\css\docs.min.css" />
+    <Content Include="BootStrap\docs\assets\css\src\docs.css" />
+    <Content Include="BootStrap\docs\assets\css\src\pygments-manni.css" />
+    <Content Include="BootStrap\docs\assets\flash\ZeroClipboard.swf" />
+    <Content Include="BootStrap\docs\assets\img\components.png" />
+    <Content Include="BootStrap\docs\assets\img\devices.png" />
+    <Content Include="BootStrap\docs\assets\img\sass-less.png" />
+    <Content Include="BootStrap\docs\assets\js\customize.min.js" />
+    <Content Include="BootStrap\docs\assets\js\docs.min.js" />
+    <Content Include="BootStrap\docs\assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="BootStrap\docs\assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="BootStrap\docs\assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="BootStrap\docs\assets\js\raw-files.min.js" />
+    <Content Include="BootStrap\docs\assets\js\src\application.js" />
+    <Content Include="BootStrap\docs\assets\js\src\customizer.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\anchor.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\autoprefixer.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\Blob.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\FileSaver.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\holder.min.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\jszip.min.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\less.min.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\uglify.min.js" />
+    <Content Include="BootStrap\docs\assets\js\vendor\ZeroClipboard.min.js" />
+    <Content Include="BootStrap\docs\browser-bugs.html" />
+    <Content Include="BootStrap\docs\components.html" />
+    <Content Include="BootStrap\docs\css.html" />
+    <Content Include="BootStrap\docs\customize.html" />
+    <Content Include="BootStrap\docs\dist\css\bootstrap-theme.css" />
+    <Content Include="BootStrap\docs\dist\css\bootstrap-theme.css.map" />
+    <Content Include="BootStrap\docs\dist\css\bootstrap-theme.min.css" />
+    <Content Include="BootStrap\docs\dist\css\bootstrap.css" />
+    <Content Include="BootStrap\docs\dist\css\bootstrap.css.map" />
+    <Content Include="BootStrap\docs\dist\css\bootstrap.min.css" />
+    <Content Include="BootStrap\docs\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="BootStrap\docs\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="BootStrap\docs\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="BootStrap\docs\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="BootStrap\docs\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="BootStrap\docs\dist\js\bootstrap.js" />
+    <Content Include="BootStrap\docs\dist\js\bootstrap.min.js" />
+    <Content Include="BootStrap\docs\dist\js\npm.js" />
+    <Content Include="BootStrap\docs\examples\blog\blog.css" />
+    <Content Include="BootStrap\docs\examples\blog\index.html" />
+    <Content Include="BootStrap\docs\examples\carousel\carousel.css" />
+    <Content Include="BootStrap\docs\examples\carousel\index.html" />
+    <Content Include="BootStrap\docs\examples\cover\cover.css" />
+    <Content Include="BootStrap\docs\examples\cover\index.html" />
+    <Content Include="BootStrap\docs\examples\dashboard\dashboard.css" />
+    <Content Include="BootStrap\docs\examples\dashboard\index.html" />
+    <Content Include="BootStrap\docs\examples\grid\grid.css" />
+    <Content Include="BootStrap\docs\examples\grid\index.html" />
+    <Content Include="BootStrap\docs\examples\jumbotron-narrow\index.html" />
+    <Content Include="BootStrap\docs\examples\jumbotron-narrow\jumbotron-narrow.css" />
+    <Content Include="BootStrap\docs\examples\jumbotron\index.html" />
+    <Content Include="BootStrap\docs\examples\jumbotron\jumbotron.css" />
+    <Content Include="BootStrap\docs\examples\justified-nav\index.html" />
+    <Content Include="BootStrap\docs\examples\justified-nav\justified-nav.css" />
+    <Content Include="BootStrap\docs\examples\navbar-fixed-top\index.html" />
+    <Content Include="BootStrap\docs\examples\navbar-fixed-top\navbar-fixed-top.css" />
+    <Content Include="BootStrap\docs\examples\navbar-static-top\index.html" />
+    <Content Include="BootStrap\docs\examples\navbar-static-top\navbar-static-top.css" />
+    <Content Include="BootStrap\docs\examples\navbar\index.html" />
+    <Content Include="BootStrap\docs\examples\navbar\navbar.css" />
+    <Content Include="BootStrap\docs\examples\non-responsive\index.html" />
+    <Content Include="BootStrap\docs\examples\non-responsive\non-responsive.css" />
+    <Content Include="BootStrap\docs\examples\offcanvas\index.html" />
+    <Content Include="BootStrap\docs\examples\offcanvas\offcanvas.css" />
+    <Content Include="BootStrap\docs\examples\offcanvas\offcanvas.js" />
+    <Content Include="BootStrap\docs\examples\screenshots\blog.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\carousel.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\cover.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\dashboard.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\equal-height-columns.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\grid.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\jumbotron-narrow.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\jumbotron.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\justified-nav.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\navbar-fixed.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\navbar-static.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\navbar.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\non-responsive.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\offcanvas.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\sign-in.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\starter-template.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\sticky-footer-navbar.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\sticky-footer.jpg" />
+    <Content Include="BootStrap\docs\examples\screenshots\theme.jpg" />
+    <Content Include="BootStrap\docs\examples\signin\index.html" />
+    <Content Include="BootStrap\docs\examples\signin\signin.css" />
+    <Content Include="BootStrap\docs\examples\starter-template\index.html" />
+    <Content Include="BootStrap\docs\examples\starter-template\starter-template.css" />
+    <Content Include="BootStrap\docs\examples\sticky-footer-navbar\index.html" />
+    <Content Include="BootStrap\docs\examples\sticky-footer-navbar\sticky-footer-navbar.css" />
+    <Content Include="BootStrap\docs\examples\sticky-footer\index.html" />
+    <Content Include="BootStrap\docs\examples\sticky-footer\sticky-footer.css" />
+    <Content Include="BootStrap\docs\examples\theme\index.html" />
+    <Content Include="BootStrap\docs\examples\theme\theme.css" />
+    <Content Include="BootStrap\docs\examples\tooltip-viewport\index.html" />
+    <Content Include="BootStrap\docs\examples\tooltip-viewport\tooltip-viewport.css" />
+    <Content Include="BootStrap\docs\examples\tooltip-viewport\tooltip-viewport.js" />
+    <Content Include="BootStrap\docs\favicon.ico" />
+    <Content Include="BootStrap\docs\getting-started.html" />
+    <Content Include="BootStrap\docs\index.html" />
+    <Content Include="BootStrap\docs\javascript.html" />
+    <Content Include="BootStrap\docs\LICENSE" />
+    <Content Include="BootStrap\docs\migration.html" />
+    <Content Include="BootStrap\docs\robots.txt" />
+    <Content Include="BootStrap\docs\sitemap.xml" />
+    <Content Include="BootStrap\docs\_data\browser-bugs.yml" />
+    <Content Include="BootStrap\docs\_data\core-team.yml" />
+    <Content Include="BootStrap\docs\_data\glyphicons.yml" />
+    <Content Include="BootStrap\docs\_data\sass-team.yml" />
+    <Content Include="BootStrap\docs\_data\showcase.yml" />
+    <Content Include="BootStrap\docs\_data\translations.yml" />
+    <Content Include="BootStrap\docs\_includes\ads.html" />
+    <Content Include="BootStrap\docs\_includes\components\alerts.html" />
+    <Content Include="BootStrap\docs\_includes\components\badges.html" />
+    <Content Include="BootStrap\docs\_includes\components\breadcrumbs.html" />
+    <Content Include="BootStrap\docs\_includes\components\button-dropdowns.html" />
+    <Content Include="BootStrap\docs\_includes\components\button-groups.html" />
+    <Content Include="BootStrap\docs\_includes\components\dropdowns.html" />
+    <Content Include="BootStrap\docs\_includes\components\glyphicons.html" />
+    <Content Include="BootStrap\docs\_includes\components\input-groups.html" />
+    <Content Include="BootStrap\docs\_includes\components\jumbotron.html" />
+    <Content Include="BootStrap\docs\_includes\components\labels.html" />
+    <Content Include="BootStrap\docs\_includes\components\list-group.html" />
+    <Content Include="BootStrap\docs\_includes\components\media.html" />
+    <Content Include="BootStrap\docs\_includes\components\navbar.html" />
+    <Content Include="BootStrap\docs\_includes\components\navs.html" />
+    <Content Include="BootStrap\docs\_includes\components\page-header.html" />
+    <Content Include="BootStrap\docs\_includes\components\pagination.html" />
+    <Content Include="BootStrap\docs\_includes\components\panels.html" />
+    <Content Include="BootStrap\docs\_includes\components\progress-bars.html" />
+    <Content Include="BootStrap\docs\_includes\components\responsive-embed.html" />
+    <Content Include="BootStrap\docs\_includes\components\thumbnails.html" />
+    <Content Include="BootStrap\docs\_includes\components\wells.html" />
+    <Content Include="BootStrap\docs\_includes\css\buttons.html" />
+    <Content Include="BootStrap\docs\_includes\css\code.html" />
+    <Content Include="BootStrap\docs\_includes\css\forms.html" />
+    <Content Include="BootStrap\docs\_includes\css\grid.html" />
+    <Content Include="BootStrap\docs\_includes\css\helpers.html" />
+    <Content Include="BootStrap\docs\_includes\css\images.html" />
+    <Content Include="BootStrap\docs\_includes\css\less.html" />
+    <Content Include="BootStrap\docs\_includes\css\overview.html" />
+    <Content Include="BootStrap\docs\_includes\css\responsive-utilities.html" />
+    <Content Include="BootStrap\docs\_includes\css\sass.html" />
+    <Content Include="BootStrap\docs\_includes\css\tables.html" />
+    <Content Include="BootStrap\docs\_includes\css\type.html" />
+    <Content Include="BootStrap\docs\_includes\customizer-variables.html" />
+    <Content Include="BootStrap\docs\_includes\footer.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\accessibility.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\browser-device-support.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\community.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\disabling-responsiveness.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\download.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\examples.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\grunt.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\license.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\template.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\third-party-support.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\tools.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\translations.html" />
+    <Content Include="BootStrap\docs\_includes\getting-started\whats-included.html" />
+    <Content Include="BootStrap\docs\_includes\header.html" />
+    <Content Include="BootStrap\docs\_includes\js\affix.html" />
+    <Content Include="BootStrap\docs\_includes\js\alerts.html" />
+    <Content Include="BootStrap\docs\_includes\js\buttons.html" />
+    <Content Include="BootStrap\docs\_includes\js\carousel.html" />
+    <Content Include="BootStrap\docs\_includes\js\collapse.html" />
+    <Content Include="BootStrap\docs\_includes\js\dropdowns.html" />
+    <Content Include="BootStrap\docs\_includes\js\modal.html" />
+    <Content Include="BootStrap\docs\_includes\js\overview.html" />
+    <Content Include="BootStrap\docs\_includes\js\popovers.html" />
+    <Content Include="BootStrap\docs\_includes\js\scrollspy.html" />
+    <Content Include="BootStrap\docs\_includes\js\tabs.html" />
+    <Content Include="BootStrap\docs\_includes\js\tooltips.html" />
+    <Content Include="BootStrap\docs\_includes\js\transitions.html" />
+    <Content Include="BootStrap\docs\_includes\nav\about.html" />
+    <Content Include="BootStrap\docs\_includes\nav\components.html" />
+    <Content Include="BootStrap\docs\_includes\nav\css.html" />
+    <Content Include="BootStrap\docs\_includes\nav\customize.html" />
+    <Content Include="BootStrap\docs\_includes\nav\getting-started.html" />
+    <Content Include="BootStrap\docs\_includes\nav\javascript.html" />
+    <Content Include="BootStrap\docs\_includes\nav\main.html" />
+    <Content Include="BootStrap\docs\_includes\nav\migration.html" />
+    <Content Include="BootStrap\docs\_includes\social-buttons.html" />
+    <Content Include="BootStrap\docs\_jade\customizer-nav.jade" />
+    <Content Include="BootStrap\docs\_jade\customizer-variables.jade" />
+    <Content Include="BootStrap\docs\_layouts\default.html" />
+    <Content Include="BootStrap\docs\_layouts\home.html" />
+    <Content Include="BootStrap\docs\_plugins\bridge.rb" />
+    <Content Include="BootStrap\docs\_plugins\bugify.rb" />
+    <Content Include="BootStrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="BootStrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="BootStrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="BootStrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="BootStrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="BootStrap\Gruntfile.js" />
+    <Content Include="BootStrap\grunt\.jshintrc" />
+    <Content Include="BootStrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="BootStrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="BootStrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="BootStrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="BootStrap\grunt\configBridge.json" />
+    <Content Include="BootStrap\grunt\sauce_browsers.yml" />
+    <Content Include="BootStrap\js\.jscsrc" />
+    <Content Include="BootStrap\js\.jshintrc" />
+    <Content Include="BootStrap\js\affix.js" />
+    <Content Include="BootStrap\js\alert.js" />
+    <Content Include="BootStrap\js\button.js" />
+    <Content Include="BootStrap\js\carousel.js" />
+    <Content Include="BootStrap\js\collapse.js" />
+    <Content Include="BootStrap\js\dropdown.js" />
+    <Content Include="BootStrap\js\modal.js" />
+    <Content Include="BootStrap\js\popover.js" />
+    <Content Include="BootStrap\js\scrollspy.js" />
+    <Content Include="BootStrap\js\tab.js" />
+    <Content Include="BootStrap\js\tests\index.html" />
+    <Content Include="BootStrap\js\tests\README.md" />
+    <Content Include="BootStrap\js\tests\unit\.jshintrc" />
+    <Content Include="BootStrap\js\tests\unit\affix.js" />
+    <Content Include="BootStrap\js\tests\unit\alert.js" />
+    <Content Include="BootStrap\js\tests\unit\button.js" />
+    <Content Include="BootStrap\js\tests\unit\carousel.js" />
+    <Content Include="BootStrap\js\tests\unit\collapse.js" />
+    <Content Include="BootStrap\js\tests\unit\dropdown.js" />
+    <Content Include="BootStrap\js\tests\unit\modal.js" />
+    <Content Include="BootStrap\js\tests\unit\phantom.js" />
+    <Content Include="BootStrap\js\tests\unit\popover.js" />
+    <Content Include="BootStrap\js\tests\unit\scrollspy.js" />
+    <Content Include="BootStrap\js\tests\unit\tab.js" />
+    <Content Include="BootStrap\js\tests\unit\tooltip.js" />
+    <Content Include="BootStrap\js\tests\vendor\jquery.min.js" />
+    <Content Include="BootStrap\js\tests\vendor\qunit.css" />
+    <Content Include="BootStrap\js\tests\vendor\qunit.js" />
+    <Content Include="BootStrap\js\tests\visual\affix-with-sticky-footer.html" />
+    <Content Include="BootStrap\js\tests\visual\affix.html" />
+    <Content Include="BootStrap\js\tests\visual\alert.html" />
+    <Content Include="BootStrap\js\tests\visual\button.html" />
+    <Content Include="BootStrap\js\tests\visual\carousel.html" />
+    <Content Include="BootStrap\js\tests\visual\collapse.html" />
+    <Content Include="BootStrap\js\tests\visual\dropdown.html" />
+    <Content Include="BootStrap\js\tests\visual\modal.html" />
+    <Content Include="BootStrap\js\tests\visual\popover.html" />
+    <Content Include="BootStrap\js\tests\visual\scrollspy.html" />
+    <Content Include="BootStrap\js\tests\visual\tab.html" />
+    <Content Include="BootStrap\js\tests\visual\tooltip.html" />
+    <Content Include="BootStrap\js\tooltip.js" />
+    <Content Include="BootStrap\js\transition.js" />
+    <Content Include="BootStrap\less\.csscomb.json" />
+    <Content Include="BootStrap\less\.csslintrc" />
+    <Content Include="BootStrap\less\alerts.less" />
+    <Content Include="BootStrap\less\badges.less" />
+    <Content Include="BootStrap\less\bootstrap.less" />
+    <Content Include="BootStrap\less\breadcrumbs.less" />
+    <Content Include="BootStrap\less\button-groups.less" />
+    <Content Include="BootStrap\less\buttons.less" />
+    <Content Include="BootStrap\less\carousel.less" />
+    <Content Include="BootStrap\less\close.less" />
+    <Content Include="BootStrap\less\code.less" />
+    <Content Include="BootStrap\less\component-animations.less" />
+    <Content Include="BootStrap\less\dropdowns.less" />
+    <Content Include="BootStrap\less\forms.less" />
+    <Content Include="BootStrap\less\glyphicons.less" />
+    <Content Include="BootStrap\less\grid.less" />
+    <Content Include="BootStrap\less\input-groups.less" />
+    <Content Include="BootStrap\less\jumbotron.less" />
+    <Content Include="BootStrap\less\labels.less" />
+    <Content Include="BootStrap\less\list-group.less" />
+    <Content Include="BootStrap\less\media.less" />
+    <Content Include="BootStrap\less\mixins.less" />
+    <Content Include="BootStrap\less\mixins\alerts.less" />
+    <Content Include="BootStrap\less\mixins\background-variant.less" />
+    <Content Include="BootStrap\less\mixins\border-radius.less" />
+    <Content Include="BootStrap\less\mixins\buttons.less" />
+    <Content Include="BootStrap\less\mixins\center-block.less" />
+    <Content Include="BootStrap\less\mixins\clearfix.less" />
+    <Content Include="BootStrap\less\mixins\forms.less" />
+    <Content Include="BootStrap\less\mixins\gradients.less" />
+    <Content Include="BootStrap\less\mixins\grid-framework.less" />
+    <Content Include="BootStrap\less\mixins\grid.less" />
+    <Content Include="BootStrap\less\mixins\hide-text.less" />
+    <Content Include="BootStrap\less\mixins\image.less" />
+    <Content Include="BootStrap\less\mixins\labels.less" />
+    <Content Include="BootStrap\less\mixins\list-group.less" />
+    <Content Include="BootStrap\less\mixins\nav-divider.less" />
+    <Content Include="BootStrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="BootStrap\less\mixins\opacity.less" />
+    <Content Include="BootStrap\less\mixins\pagination.less" />
+    <Content Include="BootStrap\less\mixins\panels.less" />
+    <Content Include="BootStrap\less\mixins\progress-bar.less" />
+    <Content Include="BootStrap\less\mixins\reset-filter.less" />
+    <Content Include="BootStrap\less\mixins\reset-text.less" />
+    <Content Include="BootStrap\less\mixins\resize.less" />
+    <Content Include="BootStrap\less\mixins\responsive-visibility.less" />
+    <Content Include="BootStrap\less\mixins\size.less" />
+    <Content Include="BootStrap\less\mixins\tab-focus.less" />
+    <Content Include="BootStrap\less\mixins\table-row.less" />
+    <Content Include="BootStrap\less\mixins\text-emphasis.less" />
+    <Content Include="BootStrap\less\mixins\text-overflow.less" />
+    <Content Include="BootStrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="BootStrap\less\modals.less" />
+    <Content Include="BootStrap\less\navbar.less" />
+    <Content Include="BootStrap\less\navs.less" />
+    <Content Include="BootStrap\less\normalize.less" />
+    <Content Include="BootStrap\less\pager.less" />
+    <Content Include="BootStrap\less\pagination.less" />
+    <Content Include="BootStrap\less\panels.less" />
+    <Content Include="BootStrap\less\popovers.less" />
+    <Content Include="BootStrap\less\print.less" />
+    <Content Include="BootStrap\less\progress-bars.less" />
+    <Content Include="BootStrap\less\responsive-embed.less" />
+    <Content Include="BootStrap\less\responsive-utilities.less" />
+    <Content Include="BootStrap\less\scaffolding.less" />
+    <Content Include="BootStrap\less\tables.less" />
+    <Content Include="BootStrap\less\theme.less" />
+    <Content Include="BootStrap\less\thumbnails.less" />
+    <Content Include="BootStrap\less\tooltip.less" />
+    <Content Include="BootStrap\less\type.less" />
+    <Content Include="BootStrap\less\utilities.less" />
+    <Content Include="BootStrap\less\variables.less" />
+    <Content Include="BootStrap\less\wells.less" />
+    <Content Include="BootStrap\LICENSE" />
+    <Content Include="BootStrap\package.js" />
+    <Content Include="BootStrap\package.json" />
+    <Content Include="BootStrap\README.md" />
+    <Content Include="BootStrap\test-infra\npm-shrinkwrap.json" />
+    <Content Include="BootStrap\test-infra\README.md" />
+    <Content Include="BootStrap\test-infra\requirements.txt" />
+    <Content Include="BootStrap\test-infra\S3Cachefile.json" />
+    <Content Include="BootStrap\test-infra\s3_cache.py" />
+    <Content Include="BootStrap\test-infra\uncached-npm-install.sh" />
+    <Content Include="BootStrap\_config.yml" />
+    <Content Include="Images\hoodies.png" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\formHandling.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\npm.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\DEVSENSE\PHP Tools\VS$(VisualStudioVersion)\Devsense.PHP.MsWebApplication.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
